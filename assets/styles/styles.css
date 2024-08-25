@@ -125,3 +125,39 @@ button[type="submit"]:hover:before {
 
 /*home*/
 
+.body {
+    background-image: url(/assets/images/itachi3.png);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 9rem;
+    font-weight: 500;
+    transition: .3s ease;
+    border-bottom: 3px solid transparent;
+    border-radius: 3px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(173, 0, 0);
+    border-bottom: 3px solid rgb(173, 0, 0);
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
