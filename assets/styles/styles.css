@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --primary: var(#4C4F54);
+    --secundary: var(#252B2B);
+    --terceira: var(#EFDFC5);
+    --quarta: var(#DC2011);
+    --quinta: var(#8F0B13);
+    --sexta: var(#380F17);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/images/itachi2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 80vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Estilos para a caixa de login */
+.login-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(66, 66, 66, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #252B2B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    height: 45px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+}
+
+button[type="submit"]:hover {
+    background-color: #DC2011;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Efeito de brilho */
+}
+
+button[type="submit"]:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(255,255,255,0) 80%);
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+button[type="submit"]:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+@media screen and (max-width: 600px) {
+    .login-box {
+        max-width: 300px;
+    }
+}
+
+.login-links {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.login-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
