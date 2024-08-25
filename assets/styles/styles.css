@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    text-decoration: none;
 }
 
 :root {
@@ -16,21 +17,18 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url(/assets/images/itachi2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 80vh; 
     display: flex;
-    justify-content: center; 
     align-items: center; 
 }
 
-/* Estilos para a caixa de login */
 .login-box {
     max-width: 400px;
+    margin: 250px auto;
+    line-height: 60px;
     width: 100%;
     padding: 20px;
     background-color: rgba(66, 66, 66, 0.6);
@@ -70,7 +68,7 @@ button[type="submit"] {
     width: 90%;
     height: 45px;
     color: white;
-    padding: 10px 20px;
+    padding: 0 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -82,7 +80,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #DC2011;
     color: rgb(0, 0, 0);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Efeito de brilho */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
 }
 
 button[type="submit"]:before {
@@ -103,6 +101,7 @@ button[type="submit"]:hover:before {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
+
 @media screen and (max-width: 600px) {
     .login-box {
         max-width: 300px;
@@ -123,3 +122,6 @@ button[type="submit"]:hover:before {
     font-size: 14px;
     font-weight: 500;
 }
+
+/*home*/
+
